@@ -25,3 +25,33 @@ body{
   font-size: 40px;
   margin: 0 10px;
 }
+
+.search-fb{
+  background-color: rgb(230,230,230);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.search-fb svg{
+  color: gray;
+  font-size: 15px;
+}
+
+.menu-fb{
+  cursor: pointer;
+  margin-left: 25px;
+  position: relative;
+  padding: 8px 10px;
+}
+
+.menu-fb:hover{
+  background-color: rgb(230,230,230);
+}
+
+.menu-fb svg{
+  color: gray;
+  font-size: 25px;
+}
