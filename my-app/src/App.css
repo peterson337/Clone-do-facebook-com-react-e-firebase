@@ -55,3 +55,86 @@ body{
   color: gray;
   font-size: 25px;
 }
+
+.headerRight{
+  width: 50%;
+  text-align: right;
+  margin: 0 20px;
+}
+
+.plusBtn{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: rgb(230,230,230);
+  text-align: center;
+  line-height: 36px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.stories{
+  display: flex;
+  margin: 10px 0;
+}
+
+.storiesCard{
+  width: 19%;
+  margin-right: 1%;
+  padding-top: 25%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.storiesCard p{
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.feed{
+  background-color: white;
+  padding: 10px;
+}
+
+.feedForm{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.feedForm img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.feedForm input{
+  position: relative;
+  top: -8;
+  margin-left: 2%;
+  width: calc(98% - 40px);
+  height: 50px;
+  background-color: rgb(230,230,230);
+  border-radius: 20px;
+  font-size: 15px;
+  border: 0;
+  padding-left: 20px;
+}
+
+.feedForm input:focus{
+  outline: 0;
+}
+
+.feedIcons{
+  padding: 20px 40px;
+  display: flex;
+}
+
+.videoIcons{
+  font-size: 25px;
+}
