@@ -135,6 +135,65 @@ body{
   display: flex;
 }
 
-.videoIcons{
+.iconsSingle{
+  width: 33.3%;
+  text-align: center;
+}
+
+.iconsSingle svg{
   font-size: 25px;
+  vertical-align: middle;
+  color: #f02849;
+}
+
+.iconsSingle span{
+  font-weight: bold;
+  color: gray;
+  margin: 0 10px;
+}
+
+.feedPosts{
+  margin: 20px 0;
+  background-color: white;
+}
+
+.feedPosts__profile{
+  padding: 10px;
+}
+
+.feedPosts__profile h3{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+
+.feedPosts__profile h3 > span{
+  font-weight: normal;
+  font-size: 15px;
+}
+
+
+.feedPosts__profile img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.feedPosts__content p{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.feedPosts__content{
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .feedPosts__content{
+    width: 100%;
+    display: none;
+  }
 }
