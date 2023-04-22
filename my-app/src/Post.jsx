@@ -4,19 +4,20 @@ import AnyaForgerEoCachorro from "./resources/AnyaForgerEoCachorro.png";
 
 
 
-const Post = () => {
+
+const Post = (props) => {
   return (
     <div className='feedPosts'>
         <div className='feedPostsSingle'>
 
                 <div className='feedPosts__profile'>
                     <img src={AnyaForger}/>
-                    <h3>Anya Forger <br /><span>2:00</span></h3>
+                    <h3>{props.nome}<br /><span>{props.horario}
+                    </span></h3>
                 </div>
 
                 <div className='feedPosts__content'>                    
-                    <p> Anya Forger uma das protagosnista de spy x family, além disso,
-                    possui o poder de ler mentes e o seu cachorro que pode prever o futuro.</p>
+                    <p> {props.conteudo}</p>
                     <img src={AnyaForgerEoCachorro}/>
                 </div>
 

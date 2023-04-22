@@ -191,9 +191,14 @@ body{
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+.feedPosts__content img{
+  width: 50%;
+  margin: 0 10px;
+}
+
+
+@media screen and (min-width: 768px) {
   .feedPosts__content{
-    width: 100%;
-    display: none;
+    max-width: 100%;
   }
 }

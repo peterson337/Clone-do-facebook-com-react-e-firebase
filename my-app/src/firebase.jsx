@@ -1,6 +1,8 @@
-import firebase from 'firebase';
+import {initializeApp} from 'firebase/app';
+import { getFirestore } from "firebase/firestore";
 
-const firebaseApp = firebase.initializeApp ({
+
+const firebaseConfig = {
     apiKey: "AIzaSyC5kdX3TUStnT4qYXtFtF2ijWK1RkTFPVg",
     authDomain: "clone-facebook-8aeba.firebaseapp.com",
     projectId: "clone-facebook-8aeba",
@@ -8,16 +10,13 @@ const firebaseApp = firebase.initializeApp ({
     messagingSenderId: "380030812338",
     appId: "1:380030812338:web:2f776d7c3b0ae801cd89ab",
     measurementId: "G-MZ392XMFM4"
-  });
+  };
 
 
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
 
-const db = firebase.firestore();
-const auth = firebase.auth();
-const storage = firebase.storage();
-const functions = firebase.functions();
-
-export{db, auth, storage, functions};
+export{db};
 
 
 /* 
@@ -33,4 +32,9 @@ import { getAnalytics } from "firebase/analytics";
 // Initialize Firebase
 const app = initializeApp(firebaseApp);
 const analytics = getAnalytics(app);
-*/
+
+const auth = firebase.auth();
+const storage = firebase.storage();
+const functions = firebase.functions();
+
+, auth, storage, functions*/
