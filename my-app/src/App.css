@@ -104,6 +104,8 @@ body{
 .feedForm{
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  display: inline-flex;
+  width: 100%;
 }
 
 .feedForm img{
@@ -195,6 +197,7 @@ body{
   width: 50%;
   margin: 0 10px;
 }
+
 
 
 @media screen and (min-width: 768px) {
